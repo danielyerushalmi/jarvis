@@ -1,0 +1,18 @@
+{
+  "name": "jarvis",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm --prefix server run dev\" \"npm --prefix web run dev\"",
+    "server": "npm --prefix server run dev",
+    "web": "npm --prefix web run dev",
+    "start": "npm --prefix server run start",
+    "policy": "npm --prefix server run policy",
+    "autostart": "powershell -NoProfile -ExecutionPolicy Bypass -File server/scripts/autostart.ps1",
+    "autostart:off": "powershell -NoProfile -ExecutionPolicy Bypass -File server/scripts/autostart.ps1 -Remove"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

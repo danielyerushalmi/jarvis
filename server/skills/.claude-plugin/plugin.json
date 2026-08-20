@@ -1,0 +1,6 @@
+{
+  "name": "jarvis-skills",
+  "description": "Procedures Jarvis follows for its own recurring routines. Plain markdown — add or edit a skill without writing code.",
+  "version": "0.2.0",
+  "skills": ["./skills/morning-briefing", "./skills/end-of-day", "./skills/browser-work"]
+}

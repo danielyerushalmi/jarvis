@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.playwright-mcp/
+*.log
+# agent scratch workspace (created at runtime)
+agent-workspace/
+# dropped-file uploads land here (created at runtime)
+dropped/
+# large regenerable data — OCR language data, vector DBs
+*.traineddata
+*.db
+
+# local secrets / runtime config
+.env
+.env.*
+!.env.example
+spotify.json
+.jarvis/
