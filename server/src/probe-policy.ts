@@ -32,7 +32,7 @@ const SHOULD_ASK: [string, Record<string, unknown>][] = [
   ["Bash", { command: "reg delete HKLM\\Software\\Foo /f" }],
   ["Bash", { command: "net user hacker /add" }],
   ["Write", { file_path: "C:\\Windows\\System32\\drivers\\etc\\hosts" }],
-  ["Write", { file_path: "C:\\Users\\yerud\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\x.lnk" }],
+  ["Write", { file_path: "C:\\Users\\me\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\x.lnk" }],
   ["mcp__memory__forget", { id: "abc" }],
 
   // ---- protected paths reached through a SHELL, not a file tool ----
@@ -79,8 +79,8 @@ const SHOULD_RUN: [string, Record<string, unknown>][] = [
   ["Bash", { command: "git rm --cached secrets.env" }],
   ["Bash", { command: "ls -la" }],
   ["Bash", { command: "curl https://api.example.com/data > out.json" }],
-  ["Write", { file_path: "C:\\Users\\yerud\\project\\notes.md" }],
-  ["Edit", { file_path: "C:\\Users\\yerud\\project\\src\\App.tsx" }],
+  ["Write", { file_path: "C:\\Users\\me\\project\\notes.md" }],
+  ["Edit", { file_path: "C:\\Users\\me\\project\\src\\App.tsx" }],
   ["mcp__computer__screenshot", {}],
   ["mcp__computer__read_screen_text", {}],
   ["mcp__computer__launch_app", { target: "Spotify" }],
